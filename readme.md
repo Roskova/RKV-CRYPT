@@ -1,37 +1,37 @@
-## Welcome to GitHub Pages
+![Logo](https://raw.githubusercontent.com/Roskova/RKV-CRYPT/main/logo.png)
+# RKV-CRYPT
+### Logiciel de cryptage modulaire par ROSKOVA
+**RKV-CRYPT est un logiciel de cryptage modulaire développé par ROSKOVA** qui a pour but de permettre à n'importe qui sans expérience en informatique de crypter des messages de façon sécurisés. Le Cryptage (lorsque le projet sera final) offert par RKV-CRYPT est particulièrement efficace contre les attaques grâce à sa grande modularité permettant de combiner différentes méthodes de chiffrement tant symétrique qu'asymétrique rendant ainsi les attaques inefficaces. Le principe de RKV-CRYPT est de permettre à l'utilisateur de choisir lui-même comment il veut que le logiciel crypte le message (plusieurs couches de cryptage modulaire sont appliquées au message). Le logiciel est standalone ou peut-être utilisé conjointement avec le fichier config.txt permettant de personnaliser l'interface.
 
-You can use the [editor on GitHub](https://github.com/Roskova/RKV-CRYPT/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+### Refonte de RKV-CRYPT (2.0)
+La structure de RKV-CRYPT est en cours de refonte complète. La version 1.x n'étant pas fondée en POO, cela rend l'ajout de fonctionnalité particulièrement compliqué et empêchait la compréhension et le travail d'équipe efficace (même si je travaille seul sur le projet actuellement). Une version fonctionnelle de RKV-CRYPT 2.x devrait être disponible d'ici août 2022.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+### Arborescence du dossier de configuration (OBSOLÈTE)
+```txt
+ ./
+	Config/
+		Interface.txt+
+		Table.txt+
+		Config.txt+
+		Module.txt+
+	Module/
+		Numerisation/
+			Config.txt
+			Table.txt
+			Interface.txt
+		Block4plus/
+			Config.txt
+			Interface.txt
+		Numerisation.dll
+		Block4plus.dll
+	Docs/
+		RKVCRYPT_manual_fr-ca.pdf+
+		RKVCRYPT_manual_en.pdf*
+ RKVCRYPT.exe
+ README.txt*
 ```
+______________________________________________________________________
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+Les fichiers marquer * sont optionnel et n’affecte pas la fonctionnalité de RKVCRYPT.
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Roskova/RKV-CRYPT/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Les fichiers marquer + sont obligatoire et seront autogénéré lorsque manquant. Cela réinitialise les modifications apporter à ceux-ci.
